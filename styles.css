@@ -1,0 +1,70 @@
+html {
+    min-height: 100vh;
+    margin: 0;
+    min-width: 300px;
+    box-sizing: border-box;
+}
+
+body {
+    /* background:linear-gradient(90deg,rgb(24, 22, 22),rgb(55, 53, 53) 85%,rgb(35, 33, 33)); */
+    text-align: center;
+
+
+}
+
+
+.sub-text {
+    width: 280px;
+    font-family: sans-serif;
+
+
+}
+
+img.logo,
+img.mark-muyot {
+    max-height: 75vh;
+    /* min-height:33vh;
+     */
+
+}
+
+img.logo {
+    height: 22vh;
+
+}
+
+img.mark-muyot {
+    border-radius: 1%;
+    height: 76vh;
+
+}
+
+.right-section {
+    font-size: 18px;
+    ;
+    padding-top: 30px;
+}
+
+hr {
+    background-color: rgb(92, 66, 31);
+}
+
+.container {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    padding-top: 6%;
+
+}
+
+.socmedia {
+    word-spacing: 4px;
+    background-color: rgba(236, 236, 236, 0.979);
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 880px) {
+    .container {
+        display: block;
+    }
+}
