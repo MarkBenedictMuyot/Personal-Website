@@ -12,6 +12,25 @@ body {
 
 }
 
+.navbar-brand {
+    margin: 1px;
+    padding: 3px;
+    height: 45px;
+}
+
+.navbar-nav {
+    float: right;
+
+
+}
+
+.container {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    padding-top: 1.4%;
+
+}
 
 .sub-text {
     width: 280px;
@@ -41,21 +60,15 @@ img.mark-muyot {
 
 .right-section {
     font-size: 18px;
-    ;
     padding-top: 30px;
+    padding-left: 10px;
 }
 
-hr {
+hr.hr1 {
     background-color: rgb(92, 66, 31);
-}
-
-.container {
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-    padding-top: 6%;
 
 }
+
 
 .socmedia {
     word-spacing: 4px;
