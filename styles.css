@@ -110,7 +110,51 @@ hr.hr1 {
     padding-bottom: 30px;
 }
 
+.skills h3 {
+    font-size: 20px;
+    text-decoration: underline;
 
+}
+
+.my-skills {
+    background-color: rgb(209, 213, 217);
+    text-align: center;
+    padding-top: 44%;
+
+
+}
+
+
+
+
+
+/* .my-skills::after {
+    content: '';
+    display: block;
+    clear: both;
+    padding-top: 40px; 
+
+}*/
+
+.Java,
+.HTML,
+.CSS,
+.Javascript,
+.SQL,
+.Visualcodestudio,
+.Eclipse,
+.GitHub {
+    width: 22%;
+    display: inline-block;
+    float: center;
+}
+
+.logo {
+    font-size: 35px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+}
 
 /* ++++++++++++++Contact page+++++++++++++++++++++++++++++ */
 
@@ -166,6 +210,8 @@ hr.contactme {
 
 }
 
+
+
 @media screen and (max-width: 1100px) {
 
     .aboutme {
@@ -181,7 +227,7 @@ hr.contactme {
     .aboutme-img {
         width: 320px;
         height: 280px;
-        margin-top: -1=px;
+        margin-top: -1px;
         border-radius: 50%;
         margin-right: 30px;
 
@@ -219,5 +265,29 @@ hr.contactme {
         ;
     }
 
+    @media screen and (max-width: 800px) {
+
+        .aboutme {
+            display: inline;
+
+        }
+
+        .bio {
+            font-size: 16px;
+            font-family: sans-serif, Arial;
+            text-align: justify;
+            line-height: 1.9;
+            font-weight: 900px;
+
+
+        }
+
+        .bio h2 {
+            line-height: 3;
+            text-align: center;
+        }
+
+
+    }
 
 }
