@@ -1,3 +1,33 @@
+@font-face {
+    font-family: "Arvo-Italic";
+    src: url(Arvo-Italic.ttf);
+
+
+
+}
+
+@font-face {
+    font-family: "Arvo-Regular";
+    src: url(Arvo-Regular.ttf);
+
+
+
+}
+
+@font-face {
+    font-family: "Arvo-Bold";
+    src: url(Arvo-Bold.ttf);
+    font-weight: 20;
+
+}
+
+@font-face {
+    font-family: "Arvo-BoldItalic";
+    src: url(Arvo-BoldItalic.ttf);
+    font-weight: 100;
+
+}
+
 html {
     min-height: 100vh;
     margin: 0;
@@ -33,8 +63,10 @@ body {
 }
 
 .sub-text {
-    width: 280px;
-    font-family: sans-serif;
+    font-family: Arvo-Italic;
+    font-size: 15px;
+
+
 
 
 }
@@ -48,7 +80,7 @@ img.mark-muyot {
 }
 
 img.logo {
-    height: 22vh;
+    height: 27vh;
 
 }
 
@@ -84,8 +116,8 @@ hr.hr1 {
     background-color: #f1f1f1;
     padding: 95px;
     float: left;
-
     margin-top: -20px;
+
 
 }
 
@@ -100,21 +132,30 @@ hr.hr1 {
 
 .bio {
     color: rgb(70, 69, 69);
-    font-size: 18px;
     line-height: 1.8;
-    font-family: Arial, 'Trebuchet MS', sans-serif;
-    text-align: justify
+    text-align: justify;
+
+
+}
+
+.bio>p {
+    font-family: Arvo-Regular;
+    font-size: 18px;
+
+
 }
 
 .bio>h2 {
     padding-bottom: 30px;
+    font-family: Arvo-BoldItalic;
+    text-decoration: underline;
 }
 
 .skills h3 {
     padding-top: 30px;
     padding-bottom: 60px;
     text-decoration: underline;
-
+    font-family: Arvo-BoldItalic;
 }
 
 .my-skills {
@@ -122,6 +163,8 @@ hr.hr1 {
     text-align: center;
     padding-top: 44%;
     padding-bottom: 7%;
+
+
 
 
 
@@ -170,6 +213,7 @@ hr.hr1 {
     text-align: center;
     height: 550px;
     overflow: hidden;
+
 }
 
 
@@ -178,6 +222,7 @@ hr.hr1 {
     margin-top: 0;
     text-decoration: underline;
     position: relative;
+    font-family: Arvo-BoldItalic;
 }
 
 .frontend,
@@ -254,7 +299,9 @@ hr.hr1 {
     padding-top: 15px;
     padding-left: 10px;
     /* border: 2px solid black; */
-    width: 405px;
+    width: 500px;
+
+
 
 }
 
@@ -263,16 +310,34 @@ hr.hr1 {
 
 }
 
+input {
+    padding-right: 80px;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+
+}
+
+.email {
+    margin-left: 2px;
+    padding-right: 1px;
+}
+
+.message {
+    float: left;
+    padding-left: 92px;
+}
+
 textarea#subject {
-    width: 200px;
+    width: 234px;
     padding-bottom: 23px;
-    margin-top: 12px;
+    margin-top: 5px;
     margin-bottom: 5px;
+    margin-left: -104px;
 }
 
 hr.contactme {
     padding-bottom: 20px;
-    ;
+
 }
 
 .contact {
@@ -296,8 +361,13 @@ hr.contactme {
 
     }
 
+
 }
 
+hr.hr1 {
+    background-color: rgb(92, 66, 31);
+    margin-top: -20px;
+}
 
 
 @media screen and (max-width: 1100px) {
@@ -307,8 +377,14 @@ hr.contactme {
         background-color: #f1f1f1;
         padding: 30px;
         float: left;
-
         margin-top: -25px;
+
+    }
+
+    .bio>p {
+        font-family: Arvo-Regular;
+        font-size: 13.3px;
+        padding-top: 14px;
 
     }
 
@@ -331,52 +407,66 @@ hr.contactme {
         padding-bottom: 0px;
     }
 
-    .right-section-contact {
-        line-height: 1.1;
-        font-size: 95%;
-        padding-top: 1px;
-        /* border: 2px solid black; */
 
 
-    }
 
-
-    textarea#subject {
-
-        padding-bottom: 10px;
-        margin-top: 9px;
-        margin-bottom: 3px;
-    }
 
     hr.contactme {
         padding-bottom: 0px;
-        ;
+
     }
+}
 
-    @media screen and (max-width: 800px) {
+@media screen and (max-width: 988px) {
+    .message {
 
-        .aboutme {
-            display: inline;
+        padding-right: 66px;
+        margin-left: -66px;
+    }
+}
 
-        }
-
-        .bio {
-            font-size: 16px;
-            font-family: sans-serif, Arial;
-            text-align: justify;
-            line-height: 1.9;
-            font-weight: 900px;
-
-
-        }
-
-        .bio h2 {
-            line-height: 3;
-            text-align: center;
-        }
-
+@media screen and (max-width: 883px) {
+    .message {
+        padding-right: 0px;
+        margin-left: 0px;
 
     }
 
+}
+
+@media screen and (max-width: 800px) {
+
+
+    .aboutme {
+        display: inline;
+
+    }
+
+    .bio {
+        font-size: 16px;
+        font-family: sans-serif, Arial;
+        text-align: justify;
+        line-height: 1.9;
+        font-weight: 900px;
+
+
+    }
+
+    .bio h2 {
+        line-height: 3;
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .left-section-contact {
+        margin-left: 60px;
+    }
+
+    .socmedia-contact {
+        margin-left: 60px;
+    }
 
 }
