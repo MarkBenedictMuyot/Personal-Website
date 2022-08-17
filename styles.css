@@ -350,6 +350,23 @@ hr.contactme {
 
 }
 
+/* =========Blog=========== */
+
+.blogheader {
+    font-family: Arvo-BoldItalic;
+    font-size: 40px;
+}
+
+
+
+.carousel {
+
+    margin-bottom: 30px;
+    width: 700px;
+
+}
+
+
 
 @media screen and (max-width: 880px) {
     .container {
@@ -371,6 +388,17 @@ hr.hr1 {
 
 
 @media screen and (max-width: 1100px) {
+
+
+
+    .carousel {
+
+        width: 470px;
+
+    }
+
+
+
 
     .aboutme {
         display: flex;
@@ -432,10 +460,19 @@ hr.hr1 {
 
     }
 
+    .carousel {
+        margin-left: 120px;
+
+    }
+
 }
 
 @media screen and (max-width: 800px) {
 
+    .carousel {
+        margin-left: 100px;
+
+    }
 
     .aboutme {
         display: inline;
@@ -461,6 +498,11 @@ hr.hr1 {
 }
 
 @media screen and (max-width: 500px) {
+    .carousel {
+        margin-left: 0px;
+
+    }
+
     .left-section-contact {
         margin-left: 60px;
     }
